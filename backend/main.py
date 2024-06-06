@@ -8,6 +8,16 @@ import platform
 from diffusers import AutoPipelineForText2Image
 from flask import Flask, render_template, request, jsonify, send_from_directory
 from flask_cors import CORS
+from melo.api import TTS
+
+speed = 1.0
+device = 'cpu'
+text = "La lueur dorée du soleil caresse les vagues, peignant le ciel d'une palette éblouissante."
+model = TTS(language='FR', device=device)
+speaker_ids = model.hps.data.spk2id
+output_path = 'audio/fr.wav'
+model.tts_to_file(text, speaker_ids['FR'], output_path, speed=speed)
+
 
 SD_MODEL = sys.argv[1]
 

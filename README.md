@@ -98,8 +98,8 @@ SD_MODEL=stabilityai/sdxl-turbo
 
 - [ ] Multiple users
 
+- [ ] Audio input/output
+
 - [ ] RPG mode with dices
 
 - [ ] Video/GIF output
-
-- [ ] Audio input

@@ -1,3 +1,6 @@
 [submodule "llama.cpp"]
 	path = llama.cpp
 	url = https://github.com/ggerganov/llama.cpp.git
+[submodule "MeloTTS"]
+	path = MeloTTS
+	url = https://github.com/myshell-ai/MeloTTS.git
